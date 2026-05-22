@@ -104,7 +104,7 @@ function BotPlayerCard({ bot, onEdit, onDelete, onPlay }: {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
             <div className={`h-2 w-2 rounded-full shrink-0 ${statusColors[bot.status] || 'bg-zinc-500'}`} />
-            <CardTitle className="text-sm font-medium truncate">{bot.name}</CardTitle>
+            <CardTitle className="text-sm font-medium truncate">{bot.name} <span className="text-muted-foreground">#{bot.id}</span></CardTitle>
           </div>
           <div className="flex items-center gap-1">
             <Button variant="ghost" size="icon" className="h-7 w-7" title="Player Widget"
